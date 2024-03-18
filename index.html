@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografax</title>
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <header class="cabecalho">
+            <img src="src/imagens/logo-grafite.png" alt="logo">
+        </header>
+
+        <section class="conteudo">
+            <div class="area-texto">
+                <textarea id="mensagem-entrada" placeholder="Digite o seu texto aqui..."></textarea>
+                <p id="mensagem_alerta">
+                    <img src="src/imagens/alerta.png" alt="alerta"> Atenção!!! Apenas letras minúsculas e sem acento.
+                </p>
+            </div>
+            <div id="mensagem-saida">
+                <img src="src/imagens/sem.mensagem.png" alt="">
+
+                <h4 id="mensagem_saida_principal">Nenhuma mensagem encontrada</h4>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+        </section>
+        <div class="btns">
+                <button onclick="criptografar()" id="btn-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" id="btn-descriptografar">Descriptografar</button>
+                <!-- <button id="btn-copiar">Copiar</button> -->
+        </div>
+        
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/thalesgfelix" target="_blank"><img src="src/imagens/github.png" alt="github"
+                    style="height: 30px; width: 30px; margin: 2%;"></a>
+            <a href="https://instagram.com/thalesgfelix" target="_blank" id="link-insta"><img
+                    src="src/imagens/instagram.png" alt="instagram" style="height: 30px; width: 30px; margin: 2%;"></a>
+        </div>
+        <h5>Desenvolvido por Thales Félix</h5>
+    </footer>
+    <script src="src/script.js"></script>
+</body>
+
+</html>

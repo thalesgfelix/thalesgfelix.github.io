@@ -1,0 +1,155 @@
+body{
+    background-color: #c6c6c6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h3{
+    color: #383838;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0 0 0%;
+}
+
+#mensagem-entrada{
+    width: 400px;
+    height: 500px;
+    font-size: 1.37rem;
+    background: transparent;
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#mensagem-saida{
+    width: 400px;
+    height: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+    color: #2e2e2e;
+    
+}
+
+#mensagem-saida{
+    text-align: center;
+    font-size: 1.37rem;
+}
+
+#mensagem-saida img{
+    max-width: 280px;
+    max-height: 280px;
+    width: auto;
+    height: auto;
+    margin: 17%;
+}
+
+#mensagem-saida h4{
+    margin-bottom: 2%;
+}
+
+#mensagem-saida p{
+    font-size: 0.88rem;
+    margin: 3%;
+}
+
+.btns button{
+    font-size: 0.88rem;
+    margin-top: 5%;
+    margin-left: 3%;
+    width: 150px;
+    height: 50px;
+    
+}
+
+#btn-criptografar{
+    width: 14%;
+    margin-left: 12%;
+}
+
+#btn-descriptografar{
+    width: 14%;
+}
+
+#btn-copiar{
+    font-size: 0.88rem;
+    margin-top: 100%;
+    margin-left: 30%;
+    width: 150px;
+    height: 50px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 15px;
+    
+}
+
+.icons{
+    display: flex;
+    margin-top: 5%;
+}
+
+#link-insta{
+    margin-left: 4%;
+    margin-bottom: 3%;
+}
+
+@media (max-width: 1200px) {
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    #mensagem-entrada {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    #mensagem-saida {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    #mensagem-saida img{
+        width: 100px;
+        margin-left: 30%;
+        
+    }
+    #mensagem_alerta{
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #mensagem-saida h4{
+        font-size: 1.2rem;
+    }
+
+    #mensagem-saida p{
+        font-size: 0.8rem;
+    }
+    .btns{
+        justify-content: space-between;
+    }
+}
